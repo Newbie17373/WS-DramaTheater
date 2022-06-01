@@ -472,7 +472,6 @@ border-radius: 20px;
 
 .perfomance__button:hover > a {
     transform: scale(1.05, 1.05);
-    background: #ffffff;
     color: #099b96;
 }
 
