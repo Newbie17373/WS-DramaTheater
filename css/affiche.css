@@ -663,7 +663,7 @@ z-index: 15;
 
 @media (max-width: 1020px) {
     .ticket__body {
-        height: calc(1380/1080*100%);
+        height: calc(1480/1080*100%);
     }
     }
 
