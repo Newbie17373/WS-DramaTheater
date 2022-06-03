@@ -647,7 +647,7 @@ justify-content: center;
 
 .ticket__body {
 background-color: #FFF;
-margin-top: 35rem;
+margin-top: 20rem;
 color: #000;
 position: relative;
 width: calc(1111/1440*100%);
@@ -663,7 +663,7 @@ z-index: 15;
 
 @media (max-width: 1020px) {
     .ticket__body {
-        height: calc(1680/1080*100%);
+        height: fit-content;
     }
     }
 
