@@ -473,6 +473,7 @@ border-radius: 20px;
 .perfomance__button:hover > a {
     transform: scale(1.05, 1.05);
     color: #099b96;
+    background: none;
 }
 
 .perfomance__button > a {
@@ -543,12 +544,12 @@ justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.15rem;
+    
 }
 
 .people__person:hover > a > img {
 outline: 8px solid #52F2DF;
-max-width: 100%;
 }
 
 .people__person:hover > a > h3{
@@ -561,6 +562,7 @@ max-width: 100%;
 
 .people__photo {
 border-radius: 500px;
+max-width: 100%;
 }
 
 .people__name {
@@ -749,6 +751,8 @@ align-items: center;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        align-items: start;
+        justify-content: center;
     }
 }
 
