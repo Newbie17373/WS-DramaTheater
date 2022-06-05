@@ -1,0 +1,457 @@
+@import url("./reset.css");
+@import url('./fonts.css');
+@import url('./modules/header.css');
+@import url('./modules/slider.css');
+@import url('./modules/cashbox.css');
+@import url('./modules/footer.css');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    background-color: #02070D;
+    color: #FFFF;
+    letter-spacing: 0.070rem;
+}
+
+@media(max-width: 710px) {
+    body.lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container {
+    max-width: calc(1191/1440*100%);
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    margin-top: 1.1rem;
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__inside {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 100px;
+}
+
+.upcoming {
+width: 100%;
+}
+
+.upcoming__inside {
+    
+}
+
+.upcoming__heading {
+
+}
+
+.content__heading {
+    font-size: 2.5rem;
+    line-height: 60px;
+    border-bottom: 1px solid #52F2DF;
+    font-weight: 800;
+}
+
+.performances {
+
+}
+
+.perfomances__inside {
+    margin-top: 3.9rem;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfomances__line {
+    background: #FFFFFF;
+    height: 1.2px;
+}
+
+.perfomance {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+}
+
+@media(max-width: 714px) {
+    .perfomance {
+        grid-template-columns: repeat(2, 1fr); 
+        
+    } 
+}
+
+.perfomance_one {
+
+}
+
+.perfomance__column {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+padding: 0 10px;
+}
+
+@media(max-width: 714px) {
+    .perfomance__column {
+        gap: 1.5rem;
+    } 
+}
+
+.perfomance__column_one {
+
+}
+
+@media(max-width: 714px) {
+    .perfomance__column_one {
+        display: none;
+    } 
+}
+
+.perfomance__image {
+
+}
+
+.perfomance__column_two {
+grid-column: 2 / 4;
+}
+
+@media(max-width: 714px) {
+    .perfomance__column_two {
+        grid-column: 1;
+    }
+}
+
+.perfomance__heading {
+font-size: 2.3rem;
+font-weight: 400;
+}
+
+.perfomance__subrow {
+display: flex;
+justify-content: center;
+gap: 0.8rem;
+align-items: center;
+font-size: 1.55rem;
+}
+
+.perfomance__desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.perfomance__icon {
+
+}
+
+.perfomance__text {
+    
+}
+
+.perfomance__text > span {
+    text-decoration: 1px underline solid;
+}
+
+.perfomance__column_three {
+
+}
+
+.perfomance__column_fourth {
+align-items: center;
+}
+
+.perfomance__button {
+background-color:#52F2DF;
+width: calc(1349/1440*100%);
+height: calc(377/1080*100%);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+}
+
+@media(max-width: 714px) {
+    .perfomance__button {
+        margin: 10px;
+    }
+}
+
+.perfomance__button:hover {
+    transform: scale(1.05, 1.05);
+    background: #FFF;
+    outline: 2px solid #52F2DF;
+}
+
+.perfomance__button:hover > span {
+    transform: scale(1.05, 1.05);
+    color: #ff3572;
+    background: none;
+    cursor: pointer;
+}
+
+.perfomance__button > span {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #02070D;
+    text-align: center;
+}
+
+.perfomance__date {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+}
+
+.perfomance__time {
+    font-size: 2.2rem;
+    font-weight: 700;
+    
+}
+
+.perfomance_two {
+
+}
+
+.perfomance_three {
+
+}
+
+.perfomance_fourth {
+
+}
+
+.people {
+
+}
+
+.people__inside {
+display: flex;
+flex-direction: column;
+gap: 3.8rem;
+justify-content: center;
+}
+
+.people__heading {
+
+}
+
+.people__list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+justify-items: center;
+justify-content: center;
+}
+
+@media(max-width: 1154px) {
+    .people__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+.people__person > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.15rem;
+    
+}
+
+.people__person:hover > a > img {
+outline: 8px solid #52F2DF;
+}
+
+.people__person:hover > a > h3{
+    color: #ff3572;
+    }
+
+.people__person_one {
+
+}
+
+.people__photo {
+border-radius: 500px;
+max-width: 100%;
+}
+
+.people__name {
+font-weight: 400;
+font-size: 2.2rem;
+color: #FFF;
+text-align: center;
+}
+
+.people__person_two {
+
+}
+
+.people__person_three {
+
+}
+
+.news {
+
+}
+
+.news__inside {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 3.8rem;
+}
+
+.news__heading {
+
+}
+.news__posts {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+row-gap: 4.5rem;
+gap: 5rem;
+}
+
+@media(max-width: 900px) {
+    .news__posts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+}
+
+
+.news__post {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+row-gap: 0.6rem;
+}
+
+
+.news__post_first {
+
+}
+
+.news__post-heading {
+font-size: 2.15rem;
+text-decoration: 1px underline solid #FFF;
+line-height: 3.7rem;
+cursor: pointer;
+font-weight: 400;
+}
+
+.news__post-heading:hover {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.61);
+}
+
+.news__post-date {
+font-size: 1.7rem;
+color: #848484;
+}
+
+.news__post_second {
+
+}
+
+.news__post_thirth {
+
+}
+
+.news__post_fourth {
+
+}
+
+.news__post_fifth {
+
+}
+
+.news__post_sixth {
+}
+
+.partners {
+
+}
+
+.partners__inside {
+display: flex;
+flex-direction: column;
+gap: 3.8rem;
+}
+
+.partners__heading {
+
+}
+
+.partners__list {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+row-gap: 5rem;
+}
+
+.partners__partner {
+    height: 100%;
+    width: 100%;
+}
+
+.partners__partner > a {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: #FFF;
+}
+
+.partners__partner_one > img {
+
+}
+
+.parnters__image {
+max-width: 100%;
+}
+
+.parnters__image:hover {
+opacity: 65%;
+}
+
+.partners__title {
+font-size: 2.2rem;
+font-weight: 400;
+text-align: center;
+width: 100%;
+}
+
+.partners__partner_two {
+
+}
+
