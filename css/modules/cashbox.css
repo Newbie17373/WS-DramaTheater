@@ -41,7 +41,7 @@
     
     @media(max-width: 717px) {
         .ticket__body {
-            height: calc(1191/1080*100%); 
+            height: calc(1800/1080*100%); 
         }  
     }
     
