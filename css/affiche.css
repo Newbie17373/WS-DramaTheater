@@ -76,8 +76,12 @@ width: 100%;
 }
 
 .perfomances__line {
+
+}
+
+.line {
     background: #FFFFFF;
-    height: 1.2px;
+    height: 1.2px; 
 }
 
 .perfomance {
