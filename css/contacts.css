@@ -18,16 +18,16 @@ body {
     }
 }
 
-@media(max-width: 409) {
+@media(max-width: 409px) {
     html{
-        
+        font-size: 10px;
     }
 }
 
 .wrapper {
-    display: flex;
+    dipxsplay: flex;
     align-items: center;
-    justify-content: space-between;
+    justfont-size: 10px;ify-content: space-between;
     flex-direction: column;
 }
 
