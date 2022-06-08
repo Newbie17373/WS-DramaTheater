@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    transition: all 0.25s ease; 
+    transition: all 0.25 ease; 
 }
 
 header, footer > * {
