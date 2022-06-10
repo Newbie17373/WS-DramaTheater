@@ -1,0 +1,158 @@
+@import url("./reset.css");
+@import url('./fonts.css');
+@import url('./modules/header.css');
+@import url('./modules/footer.css');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    background-color: #02070D;
+    color: #FFFF;
+    letter-spacing: 0.070rem;
+}
+
+@media(max-width: 710px) {
+    body.lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container {
+    max-width: calc(1191/1440*100%);
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    margin-top: 1.1rem;
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__inside {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 100px;
+}
+
+.content__heading {
+    font-size: 2.5rem;
+    line-height: 60px;
+    border-bottom: 1px solid #52F2DF;
+    font-weight: 800;
+}
+
+.people {
+
+}
+
+.people__inside {
+display: flex;
+flex-direction: column;
+gap: 3.8rem;
+justify-content: center;
+}
+
+.people__heading {
+
+}
+
+.people__list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+justify-content: center;
+row-gap: 4.75rem;
+}
+
+@media(max-width: 1154px) {
+    .people__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+.people__person > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+.people__person:hover > a > img {
+outline: 8px solid #52F2DF;
+}
+
+.people__person:hover > a > h3{
+    color: #ff3572;
+    }
+
+.people__person_one {
+
+}
+
+.people__photo {
+border-radius: 500px;
+max-width: 100%;
+}
+
+.people__name {
+font-weight: 400;
+font-size: 2.2rem;
+color: #FFF;
+text-align: center;
+}
+
+.people__person_two {
+
+}
+
+.people__person_three {
+
+}
+
+.people__more {
+    grid-column: 1/4
+}
+
+.more {
+    width: 100%;
+    border: 1px solid #FFF;
+    border-radius: 1.52rem;
+    font-size: 2.25rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 2px rgb(34, 33, 33);
+}
+
+.more:hover {
+    background: #FFF;
+    color: #02070D;
+    box-shadow: 4px 4px 2px rgb(34, 33, 33);
+}
+
+.more:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    background: #FFF;
+    color: #02070D;
+    box-shadow: 2px 2px 2px rgb(34, 33, 33);
+    }
